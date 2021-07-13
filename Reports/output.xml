@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.7.7 on win32)" generated="20210706 13:16:00.678" rpa="false">
+<suite id="s1" name="Newregistration Test" source="C:\Users\Käyttäjä\PycharmProjects\Signant_Health_Automation\tests\newregistration_test.robot">
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary" type="setup">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<status status="PASS" starttime="20210706 13:16:03.772" endtime="20210706 13:16:03.774"></status>
+</kw>
+<test id="s1-t1" name="New User should be able to navigate to the Application Homepage using valid Credential">
+<kw name="Navigate to Application Homepage &amp; Register successfully" library="NewRegistration_Test">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20210706 13:16:03.779" level="INFO">Opening browser 'CHROME' to base url 'http://192.168.43.55:8080/'.</msg>
+<status status="PASS" starttime="20210706 13:16:03.778" endtime="20210706 13:16:08.279"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210706 13:16:08.279" endtime="20210706 13:16:08.646"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${REGISTER_BUTTON}</arg>
+</arguments>
+<msg timestamp="20210706 13:16:08.648" level="INFO">Clicking element 'xpath://a[contains(text(),'Register')]'.</msg>
+<status status="PASS" starttime="20210706 13:16:08.647" endtime="20210706 13:16:09.091"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${USER_NAME}</arg>
+</arguments>
+<msg timestamp="20210706 13:16:09.093" level="INFO">Clicking element 'xpath://input[@name='username'][@id='username']'.</msg>
+<status status="PASS" starttime="20210706 13:16:09.092" endtime="20210706 13:16:09.276"></status>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>0.2</arg>
+</arguments>
+<status status="PASS" starttime="20210706 13:16:09.276" endtime="20210706 13:16:09.277"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${USER_NAME}</arg>
+<arg>EmmaAngel</arg>
+</arguments>
+<msg timestamp="20210706 13:16:09.278" level="INFO">Typing text 'EmmaAngel' into text field 'xpath://input[@name='username'][@id='username']'.</msg>
+<status status="PASS" starttime="20210706 13:16:09.277" endtime="20210706 13:16:10.110"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${USER_PASSWORD}</arg>
+<arg>Admin123</arg>
+</arguments>
+<msg timestamp="20210706 13:16:10.112" level="INFO">Typing text 'Admin123' into text field 'xpath://input[@type='password'][@id='password']'.</msg>
+<status status="PASS" starttime="20210706 13:16:10.111" endtime="20210706 13:16:11.020"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${FIRST_NAME}</arg>
+<arg>Emmanuel</arg>
+</arguments>
+<msg timestamp="20210706 13:16:11.022" level="INFO">Typing text 'Emmanuel' into text field 'xpath://input[@type='firstname'][@name='firstname']'.</msg>
+<status status="PASS" starttime="20210706 13:16:11.020" endtime="20210706 13:16:12.005"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${LAST_NAME}</arg>
+<arg>Isong</arg>
+</arguments>
+<msg timestamp="20210706 13:16:12.006" level="INFO">Typing text 'Isong' into text field 'xpath://input[@type='lastname'][@name='lastname']'.</msg>
+<status status="PASS" starttime="20210706 13:16:12.005" endtime="20210706 13:16:12.876"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${INPUT_PHONE}</arg>
+<arg>1234567</arg>
+</arguments>
+<msg timestamp="20210706 13:16:12.877" level="INFO">Typing text '1234567' into text field 'xpath://input[@type='phone'][@name='phone']'.</msg>
+<status status="PASS" starttime="20210706 13:16:12.876" endtime="20210706 13:16:13.716"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${REGISTER}</arg>
+</arguments>
+<msg timestamp="20210706 13:16:13.717" level="INFO">Clicking element 'xpath://input[@type='submit'][@value='Register']'.</msg>
+<status status="PASS" starttime="20210706 13:16:13.716" endtime="20210706 13:16:14.790"></status>
+</kw>
+<status status="PASS" starttime="20210706 13:16:03.777" endtime="20210706 13:16:14.791"></status>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary" type="teardown">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20210706 13:16:14.793" endtime="20210706 13:16:17.877"></status>
+</kw>
+<status status="PASS" starttime="20210706 13:16:03.774" endtime="20210706 13:16:17.878" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Existing User should be logged in successfully with valid credentials">
+<kw name="Existing User Login" library="NewRegistration_Test">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20210706 13:16:17.890" level="INFO">Opening browser 'CHROME' to base url 'http://192.168.43.55:8080/'.</msg>
+<status status="PASS" starttime="20210706 13:16:17.889" endtime="20210706 13:16:21.405"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210706 13:16:21.406" endtime="20210706 13:16:21.776"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${CLICK_LOGIN}</arg>
+</arguments>
+<msg timestamp="20210706 13:16:21.777" level="INFO">Clicking element 'xpath://a[contains(text(),'Log In')]'.</msg>
+<status status="PASS" starttime="20210706 13:16:21.776" endtime="20210706 13:16:22.731"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${LOGIN_USERNAME}</arg>
+</arguments>
+<msg timestamp="20210706 13:16:22.732" level="INFO">Clicking element 'xpath://input[@name='username'][@id='username']'.</msg>
+<status status="PASS" starttime="20210706 13:16:22.732" endtime="20210706 13:16:23.345"></status>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>0.5</arg>
+</arguments>
+<status status="PASS" starttime="20210706 13:16:23.345" endtime="20210706 13:16:23.346"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${LOGIN_USERNAME}</arg>
+<arg>EmmaAngel</arg>
+</arguments>
+<msg timestamp="20210706 13:16:23.347" level="INFO">Typing text 'EmmaAngel' into text field 'xpath://input[@name='username'][@id='username']'.</msg>
+<status status="PASS" starttime="20210706 13:16:23.347" endtime="20210706 13:16:25.044"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${LOGIN_PASSWORD}</arg>
+<arg>Admin123</arg>
+</arguments>
+<msg timestamp="20210706 13:16:25.046" level="INFO">Typing text 'Admin123' into text field 'xpath://input[@id='password']'.</msg>
+<status status="PASS" starttime="20210706 13:16:25.044" endtime="20210706 13:16:26.847"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${LOGIN_USER_INFORMATION}</arg>
+</arguments>
+<msg timestamp="20210706 13:16:26.848" level="INFO">Clicking element 'xpath://input[@type='submit'][@value='Log In']'.</msg>
+<status status="PASS" starttime="20210706 13:16:26.848" endtime="20210706 13:16:28.623"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${LOG_OUT}</arg>
+</arguments>
+<msg timestamp="20210706 13:16:28.624" level="INFO">Clicking element 'xpath://a[contains(text(),'Log Out')]'.</msg>
+<status status="PASS" starttime="20210706 13:16:28.623" endtime="20210706 13:16:29.933"></status>
+</kw>
+<status status="PASS" starttime="20210706 13:16:17.887" endtime="20210706 13:16:29.934"></status>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary" type="teardown">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20210706 13:16:29.937" endtime="20210706 13:16:32.793"></status>
+</kw>
+<status status="PASS" starttime="20210706 13:16:17.885" endtime="20210706 13:16:32.793" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210706 13:16:00.685" endtime="20210706 13:16:32.799"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" id="s1" name="Newregistration Test">Newregistration Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
